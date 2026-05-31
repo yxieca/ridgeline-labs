@@ -16,47 +16,74 @@
         }
         h1 { font-size: 1.8em; margin-bottom: 0.2em; }
         h2 { font-size: 1.3em; margin-top: 1.5em; color: #333; }
+        h3 { font-size: 1.1em; margin-top: 1.2em; color: #444; }
         .updated { color: #666; font-size: 0.9em; margin-bottom: 2em; }
         ul { padding-left: 1.5em; }
         li { margin-bottom: 0.4em; }
         a { color: #1a73e8; }
+        .app-section { background: #fff; padding: 0.1em 1.2em 1em; border-radius: 8px; border: 1px solid #e5e5e5; margin: 1em 0; }
         .footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ddd; font-size: 0.85em; color: #666; }
     </style>
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: April 26, 2026</p>
+    <p class="updated">Last updated: May 31, 2026</p>
 
-    <p>This privacy policy applies to apps published by <strong>Ridgeline Labs</strong> ("we", "us", "our"), including <strong>Solunar Trail</strong> and any future apps we release.</p>
+    <p>This privacy policy applies to apps published by <strong>Ridgeline Labs</strong> ("we", "us", "our"), including <strong>Solunar Trail</strong>, <strong>HandyYi</strong>, and any future apps we release.</p>
 
-    <h2>Information We Collect</h2>
-    <p><strong>We do not collect, transmit, or store any personal data on external servers.</strong></p>
-    <p>Our apps may access the following data, which is stored <em>only on your device</em>:</p>
-    <ul>
-        <li><strong>Location data</strong> — GPS coordinates used for tracking, compass orientation, solar/lunar calculations, and solunar activity periods. Location data is stored locally when you save a tracking session.</li>
-        <li><strong>Sensor data</strong> — Accelerometer, magnetometer, and barometer readings used for compass heading and atmospheric pressure display. This data is not stored.</li>
-        <li><strong>Saved locations and tracking sessions</strong> — Stored locally on your device. You can delete them at any time from within the app.</li>
-        <li><strong>App preferences</strong> — Settings such as theme, units, and map type are stored locally on your device.</li>
-    </ul>
+    <h2>Summary</h2>
+    <p><strong>We do not collect, transmit, or store any personal data on external servers.</strong> We do not use analytics, crash reporting, or advertising. Each app's specific data handling is described below.</p>
 
-    <h2>Third-Party Services</h2>
-    <p>Our apps may use the following third-party services:</p>
-    <ul>
-        <li><strong>Google Maps SDK</strong> — Used to display maps. When you view a map, map tile data is loaded from Google's servers. Google's privacy policy applies to this data: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-    </ul>
+    <div class="app-section">
+        <h2>HandyYi</h2>
+
+        <h3>Information We Collect</h3>
+        <p>HandyYi does <strong>not</strong> collect, transmit, or store any personal data, either on your device or anywhere else. The app contains no networking code.</p>
+
+        <h3>Local Storage</h3>
+        <p>The app stores the following on your device only:</p>
+        <ul>
+            <li><strong>App preferences</strong> — theme, text size, animation toggle, and chosen content language. Stored in standard Android preferences.</li>
+        </ul>
+        <p>No divination results, no usage history, no analytics. Uninstalling the app removes all of it.</p>
+
+        <h3>Permissions</h3>
+        <p>HandyYi requests no permissions beyond the Android defaults granted to every app.</p>
+
+        <h3>Third-Party Services</h3>
+        <p>HandyYi uses no third-party services. It does not connect to the internet at all.</p>
+    </div>
+
+    <div class="app-section">
+        <h2>Solunar Trail</h2>
+
+        <h3>Information We Collect</h3>
+        <p>Solunar Trail does <strong>not</strong> collect, transmit, or store any personal data on external servers.</p>
+        <p>The app may access the following data, which is stored <em>only on your device</em>:</p>
+        <ul>
+            <li><strong>Location data</strong> — GPS coordinates used for tracking, compass orientation, solar/lunar calculations, and solunar activity periods. Location data is stored locally when you save a tracking session.</li>
+            <li><strong>Sensor data</strong> — Accelerometer, magnetometer, and barometer readings used for compass heading and atmospheric pressure display. This data is not stored.</li>
+            <li><strong>Saved locations and tracking sessions</strong> — Stored locally on your device. You can delete them at any time from within the app.</li>
+            <li><strong>App preferences</strong> — Settings such as theme, units, and map type are stored locally on your device.</li>
+        </ul>
+
+        <h3>Third-Party Services</h3>
+        <ul>
+            <li><strong>Google Maps SDK</strong> — Used to display maps. When you view a map, map tile data is loaded from Google's servers. Google's privacy policy applies to this data: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+        </ul>
+
+        <h3>Permissions</h3>
+        <ul>
+            <li><strong>Location (GPS)</strong> — Required for tracking, compass, and solar/lunar calculations</li>
+            <li><strong>Foreground service</strong> — Required to continue GPS tracking when the app is in the background</li>
+        </ul>
+    </div>
 
     <h2>Data Sharing</h2>
-    <p>We do not sell, share, or transmit your data to any third parties. All data remains on your device unless you explicitly choose to export it (e.g., sharing a GPX file).</p>
+    <p>We do not sell, share, or transmit your data to any third parties. All data remains on your device unless you explicitly choose to export it (e.g., sharing a GPX file from Solunar Trail).</p>
 
     <h2>Analytics and Advertising</h2>
     <p>Our apps do not include any analytics, crash reporting, or advertising SDKs.</p>
-
-    <h2>Permissions</h2>
-    <p>Our apps may request the following permissions:</p>
-    <ul>
-        <li><strong>Location (GPS)</strong> — Required for tracking, compass, and solar/lunar calculations</li>
-        <li><strong>Foreground service</strong> — Required to continue GPS tracking when the app is in the background</li>
-    </ul>
 
     <h2>Children's Privacy</h2>
     <p>Our apps are not directed at children under 13. We do not knowingly collect personal information from children.</p>
