@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solunar Trail User Manual — Ridgeline Labs</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 24px 16px;
+            line-height: 1.6;
+            color: #222;
+            background: #fafafa;
+        }
+        h1 { font-size: 1.8em; margin-bottom: 0.2em; }
+        h2 { font-size: 1.3em; margin-top: 1.6em; color: #333; }
+        h3 { font-size: 1.05em; margin-top: 1.2em; color: #333; }
+        .updated { color: #666; font-size: 0.9em; margin-bottom: 2em; }
+        ul, ol { padding-left: 1.5em; }
+        li { margin-bottom: 0.4em; }
+        a { color: #1a73e8; }
+        code { background: #eee; padding: 0.1em 0.3em; border-radius: 3px; }
+        .note { background: #fff; border-left: 4px solid #1a73e8; padding: 0.8em 1em; margin: 1em 0; }
+        .footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ddd; font-size: 0.85em; color: #666; }
+    </style>
+</head>
+<body>
+    <h1>Solunar Trail User Manual</h1>
+    <p class="updated">Last updated: June 13, 2026</p>
+
+    <p><strong>Solunar Trail</strong> is an outdoor companion for solar and lunar data, solunar activity periods, saved places, GPS status, compass/orientation tools, and activity tracking.</p>
+
+    <h2>Getting Started</h2>
+    <ol>
+        <li>Open the app and grant location permission when prompted.</li>
+        <li>Use the bottom tabs to switch between solar/lunar data, saved locations, GPS/orientation tools, tracking, settings, and app information.</li>
+        <li>For best GPS results, use the app outdoors with a clear view of the sky.</li>
+    </ol>
+
+    <div class="note">
+        <strong>Safety note:</strong> Solunar Trail is informational only. Do not rely on it as your only source for navigation, weather, emergency communication, or safety-critical decisions.
+    </div>
+
+    <h2>Solar &amp; Lunar</h2>
+    <p>The Solar &amp; Lunar page shows sun and moon information for your current location or a saved location, including solunar activity periods.</p>
+    <ul>
+        <li><strong>Major periods</strong> are based on moon overhead and underfoot timing.</li>
+        <li><strong>Minor periods</strong> are based on moonrise and moonset timing.</li>
+        <li><strong>Dawn/dusk overlap</strong> may indicate a stronger activity window.</li>
+        <li>The star rating summarizes the day's expected solunar activity.</li>
+    </ul>
+
+    <h2>Locations</h2>
+    <p>Use saved locations for repeat outdoor spots such as trailheads, overlooks, stands, camps, or fishing areas.</p>
+    <ul>
+        <li>Save your current position for later use.</li>
+        <li>Rename or delete saved places as needed.</li>
+        <li>Select a saved location to view solar, lunar, and solunar information for that spot.</li>
+    </ul>
+
+    <h2>GPS Status and Orientation</h2>
+    <p>The GPS and orientation tools help you understand what your device is seeing.</p>
+    <ul>
+        <li><strong>GPS status</strong> shows live fix details such as coordinates, altitude, accuracy, and movement data when available.</li>
+        <li><strong>Orientation</strong> shows compass heading and device sensor readings.</li>
+        <li>Compass accuracy depends on your device sensors and nearby magnetic interference. Calibrate or move away from metal/electronics if the heading looks wrong.</li>
+    </ul>
+
+    <h2>Tracking an Activity</h2>
+    <p>The Tracking page records your route and activity stats locally on your device.</p>
+    <ol>
+        <li>Choose the tracking mode in Settings if needed.</li>
+        <li>Tap <strong>Start</strong> to begin recording.</li>
+        <li>Use <strong>Pause</strong> and <strong>Resume</strong> to temporarily stop/resume the timer and GPS collection.</li>
+        <li>Tap <strong>Stop</strong> to save the track.</li>
+    </ol>
+
+    <h3>Lap / Segment Markers</h3>
+    <p>In General tracking mode, tap <strong>Lap</strong> to drop a segment boundary during a recording.</p>
+    <ul>
+        <li>The Tracking page shows a live <strong>Segments</strong> count after the first lap.</li>
+        <li>Per-segment stats include distance, elevation gain, duration, moving time, and average moving speed.</li>
+        <li>If you tap Lap again before a new GPS point is captured, the app asks you to move a bit before the next lap instead of creating an empty segment.</li>
+    </ul>
+
+    <h3>Saved Track Details</h3>
+    <p>Saved tracks include route stats such as distance, duration, moving time, elevation, speed, and GPS point count. Tracks with segment markers show a per-segment breakdown in the detail view.</p>
+
+    <h2>Editing Track Segments</h2>
+    <p>Saved tracks can be edited to add, remove, or clear segment markers. Segment markers divide a track into meaningful sections without changing the original recorded route.</p>
+    <ul>
+        <li>Use the slider to choose a point along the track.</li>
+        <li>Add a marker at the selected point.</li>
+        <li>Remove the nearest marker or clear all markers if needed.</li>
+        <li>Markers are exported as GPX waypoints when exporting a track.</li>
+    </ul>
+
+    <h2>Maps and GPX Export</h2>
+    <p>Map views use Google Maps to display locations and tracks. Saved tracks can be exported as GPX files for use in other mapping or GPS tools.</p>
+
+    <h2>Settings</h2>
+    <p>Settings include preferences such as distance units, theme, map type, GPS display mode, north reference, and tracking mode.</p>
+
+    <h2>Privacy and Data</h2>
+    <p>Solunar Trail stores saved locations, preferences, and recorded tracks locally on your device. It does not include analytics, advertising, or crash reporting SDKs. See the <a href="privacy-policy.html">Solunar Trail Privacy Policy</a> for details.</p>
+
+    <h2>Troubleshooting</h2>
+    <ul>
+        <li><strong>No GPS fix:</strong> go outdoors, enable device location, and wait for a clear fix.</li>
+        <li><strong>Tracking looks stationary:</strong> your device may not have received a new GPS point yet; move a short distance and wait for the next fix.</li>
+        <li><strong>Compass seems wrong:</strong> move away from metal objects/electronics and recalibrate the device sensors.</li>
+        <li><strong>Map does not load:</strong> check network connectivity. Google Maps tiles require network access.</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>For questions or support, contact:</p>
+    <p><strong>yxieca@gmail.com</strong></p>
+
+    <div class="footer">
+        <p>&copy; 2026 Ridgeline Labs. All rights reserved.</p>
+        <p><a href="index.html">Ridgeline Labs home</a> · <a href="privacy-policy.html">Privacy Policy</a></p>
+    </div>
+</body>
+</html>
