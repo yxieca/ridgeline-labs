@@ -1,0 +1,19 @@
+# Jekyll config for the Ridgeline Labs GitHub Pages site.
+# No theme gem — we use a custom layout in _layouts/default.html.
+
+title: Ridgeline Labs
+description: Small, focused Android apps.
+
+# Pretty-print HTML output; keep Liquid out of code blocks by default.
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Keep generated paths predictable.
+permalink: pretty
+
+# Don't ship the README or workflow files in the published site.
+exclude:
+  - README.md
+  - .github/
