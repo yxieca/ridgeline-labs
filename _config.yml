@@ -13,7 +13,10 @@ kramdown:
 # Keep generated paths predictable.
 permalink: pretty
 
-# Don't ship the README or workflow files in the published site.
+# Don't ship the README, workflow files, or vendored gems in the published site.
 exclude:
   - README.md
   - .github/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
