@@ -24,84 +24,180 @@
         code { background: #eee; padding: 0.1em 0.3em; border-radius: 3px; }
         .note { background: #fff; border-left: 4px solid #1a73e8; padding: 0.8em 1em; margin: 1em 0; }
         .footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ddd; font-size: 0.85em; color: #666; }
+        figure {
+            margin: 1.2em 0;
+            text-align: center;
+        }
+        figure img {
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        figcaption {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 0.4em;
+        }
     </style>
 </head>
 <body>
     <h1>Solunar Trail User Manual</h1>
-    <p class="updated">Last updated: June 13, 2026</p>
+    <p class="updated">Last updated: June 14, 2026</p>
 
-    <p><strong>Solunar Trail</strong> is an outdoor companion for solar and lunar data, solunar activity periods, saved places, GPS status, compass/orientation tools, and activity tracking.</p>
+    <p><strong>Solunar Trail</strong> is an outdoor companion for solar and lunar data, solunar activity periods, saved places, GPS satellite status, compass / orientation tools, and activity tracking.</p>
 
     <h2>Getting Started</h2>
     <ol>
         <li>Open the app and grant location permission when prompted.</li>
-        <li>Use the bottom tabs to switch between solar/lunar data, saved locations, GPS/orientation tools, tracking, settings, and app information.</li>
+        <li>Use the <strong>tab bar at the top</strong> (scroll the tabs sideways to see more), or <strong>swipe left/right</strong> on the page, to switch between sections.</li>
         <li>For best GPS results, use the app outdoors with a clear view of the sky.</li>
     </ol>
+
+    <p>The pages, in order, are: <strong>Solar &amp; Lunar · Orientation · Tracking · Tracking Data · Locations · GPS Status · Settings · About</strong>.</p>
 
     <div class="note">
         <strong>Safety note:</strong> Solunar Trail is informational only. Do not rely on it as your only source for navigation, weather, emergency communication, or safety-critical decisions.
     </div>
 
     <h2>Solar &amp; Lunar</h2>
-    <p>The Solar &amp; Lunar page shows sun and moon information for your current location or a saved location, including solunar activity periods.</p>
+    <p>Shows sun and moon information for your current location (or a saved location), including solunar activity periods.</p>
+    <figure>
+        <img src="screenshots/solunar-trail/solar-lunar.png" alt="Solar & Lunar tab showing sunrise, sunset, solar noon, daylight hours, and lunar phase">
+        <figcaption>Solar &amp; Lunar tab — daily sun/moon timings and solunar windows.</figcaption>
+    </figure>
     <ul>
         <li><strong>Major periods</strong> are based on moon overhead and underfoot timing.</li>
         <li><strong>Minor periods</strong> are based on moonrise and moonset timing.</li>
         <li><strong>Dawn/dusk overlap</strong> may indicate a stronger activity window.</li>
         <li>The star rating summarizes the day's expected solunar activity.</li>
+        <li>Use the date arrows to look at past or future days.</li>
     </ul>
 
-    <h2>Locations</h2>
-    <p>Use saved locations for repeat outdoor spots such as trailheads, overlooks, stands, camps, or fishing areas.</p>
+    <h2>Orientation</h2>
+    <p>Compass heading, device sensor readings, and an optional "Navigate to" picker.</p>
+    <figure>
+        <img src="screenshots/solunar-trail/orientation.png" alt="Orientation tab with a compass rose, heading, and Navigate-to dropdown">
+        <figcaption>Orientation tab — compass with optional bearing to a saved location.</figcaption>
+    </figure>
     <ul>
-        <li>Save your current position for later use.</li>
-        <li>Rename or delete saved places as needed.</li>
-        <li>Select a saved location to view solar, lunar, and solunar information for that spot.</li>
+        <li>Pick any saved location from the <strong>Navigate to</strong> dropdown to see its bearing and distance.</li>
+        <li>Magnetic declination for your location is shown next to the heading.</li>
+        <li>Switch between <strong>True North</strong> and <strong>Magnetic North</strong> in Settings → Compass.</li>
+        <li>Compass accuracy depends on your device sensors and nearby magnetic interference. Move away from metal/electronics and recalibrate if the heading looks wrong.</li>
     </ul>
 
-    <h2>GPS Status and Orientation</h2>
-    <p>The GPS and orientation tools help you understand what your device is seeing.</p>
-    <ul>
-        <li><strong>GPS status</strong> shows live fix details such as coordinates, altitude, accuracy, and movement data when available.</li>
-        <li><strong>Orientation</strong> shows compass heading and device sensor readings.</li>
-        <li>Compass accuracy depends on your device sensors and nearby magnetic interference. Calibrate or move away from metal/electronics if the heading looks wrong.</li>
-    </ul>
-
-    <h2>Tracking an Activity</h2>
-    <p>The Tracking page records your route and activity stats locally on your device.</p>
+    <h2>Tracking</h2>
+    <p>Records your route and activity stats locally on your device.</p>
+    <figure>
+        <img src="screenshots/solunar-trail/tracking.png" alt="Tracking tab with Start button and zeroed live stats">
+        <figcaption>Tracking tab — Start to begin recording, then live stats appear.</figcaption>
+    </figure>
     <ol>
-        <li>Choose the tracking mode in Settings if needed.</li>
+        <li>Pick the tracking mode in Settings if needed (<strong>General</strong> or <strong>Ski</strong>).</li>
         <li>Tap <strong>Start</strong> to begin recording.</li>
         <li>Use <strong>Pause</strong> and <strong>Resume</strong> to temporarily stop/resume the timer and GPS collection.</li>
-        <li>Tap <strong>Stop</strong> to save the track.</li>
+        <li>Tap <strong>Stop</strong> to finish, then choose <strong>Save</strong> or <strong>Discard</strong>.</li>
     </ol>
 
-    <h3>Lap / Segment Markers</h3>
-    <p>In General tracking mode, tap <strong>Lap</strong> to drop a segment boundary during a recording.</p>
+    <h3>Lap / Segment Markers (General mode)</h3>
     <ul>
-        <li>The Tracking page shows a live <strong>Segments</strong> count after the first lap.</li>
+        <li>Tap <strong>⛳ Lap</strong> to drop a segment boundary during a recording.</li>
+        <li>A live <strong>Segments</strong> count appears after the first lap.</li>
         <li>Per-segment stats include distance, elevation gain, duration, moving time, and average moving speed.</li>
         <li>If you tap Lap again before a new GPS point is captured, the app asks you to move a bit before the next lap instead of creating an empty segment.</li>
     </ul>
 
-    <h3>Saved Track Details</h3>
-    <p>Saved tracks include route stats such as distance, duration, moving time, elevation, speed, and GPS point count. Tracks with segment markers show a per-segment breakdown in the detail view.</p>
+    <h2>Tracking Data</h2>
+    <p>Browse, replay, edit, export, or delete your saved tracks.</p>
+    <figure>
+        <img src="screenshots/solunar-trail/tracking-data.png" alt="Tracking Data tab showing a saved track on a satellite map with stats">
+        <figcaption>Tracking Data tab — expanded track with route map, stats, and actions.</figcaption>
+    </figure>
+    <ul>
+        <li>Tap a track to expand it and see route stats: distance, duration, moving time, elevation, speed, GPS point count, and a per-segment breakdown when markers exist.</li>
+        <li><strong>Replay</strong> the track on the map at adjustable speed (with pause/play).</li>
+        <li><strong>Export GPX</strong> to share with other mapping/GPS tools (segment markers are exported as GPX waypoints).</li>
+        <li><strong>Edit Segments</strong> lets you add, remove, or clear segment markers on an already-saved track.</li>
+        <li><strong>Trim</strong> lets you cut unwanted points off the start or end of a recording.</li>
+        <li><strong>Delete</strong> removes the recording.</li>
+    </ul>
 
-    <h2>Editing Track Segments</h2>
-    <p>Saved tracks can be edited to add, remove, or clear segment markers. Segment markers divide a track into meaningful sections without changing the original recorded route.</p>
+    <h3>Editing Segments</h3>
     <ul>
         <li>Use the slider to choose a point along the track.</li>
-        <li>Add a marker at the selected point.</li>
-        <li>Remove the nearest marker or clear all markers if needed.</li>
-        <li>Markers are exported as GPX waypoints when exporting a track.</li>
+        <li><strong>Add</strong> a marker at the selected point, <strong>Remove Nearest</strong>, or <strong>Clear All</strong>.</li>
+        <li>Markers divide the track into sections without changing the recorded route.</li>
     </ul>
+
+    <h3>Trimming a Track</h3>
+    <ul>
+        <li>Use the start/end sliders to choose how much of the recording to keep.</li>
+        <li><strong>Reset</strong> restores the full original range; <strong>Save Trim</strong> writes the trimmed version.</li>
+    </ul>
+
+    <h2>Locations</h2>
+    <p>Saved positions for repeat outdoor spots — trailheads, overlooks, stands, camps, or fishing areas.</p>
+    <figure>
+        <img src="screenshots/solunar-trail/locations.png" alt="Locations tab showing current GPS coordinates and an empty saved locations list">
+        <figcaption>Locations tab — current GPS at the top, saved places below.</figcaption>
+    </figure>
+    <ul>
+        <li>Tap <strong>+</strong> to save your current GPS position with a custom title and notes.</li>
+        <li>Tap <strong>🦌</strong> for a quick-save Game Sighting (auto-named with timestamp).</li>
+        <li>Tap a saved location to expand its details and access actions.</li>
+        <li><strong>Edit</strong> the title, notes, or lock state; <strong>📋 Copy</strong> the coordinates; <strong>GPS Update</strong> to refresh from your current fix (unless the location is locked).</li>
+        <li>Switch the embedded map between <strong>Normal / Satellite / Terrain</strong>.</li>
+        <li>Saved locations also appear in the Solar &amp; Lunar location picker and the Orientation "Navigate to" dropdown.</li>
+    </ul>
+
+    <h2>GPS Status</h2>
+    <p>Live satellite information from the device's GNSS receiver.</p>
+    <figure>
+        <img src="screenshots/solunar-trail/gps-status.png" alt="GPS Status tab Sky Plot view showing satellites colored by constellation">
+        <figcaption>GPS Status tab — Sky Plot showing satellites by constellation, with elevation rings.</figcaption>
+    </figure>
+    <ul>
+        <li>Header shows satellites <strong>Found</strong> and <strong>Using</strong> counts.</li>
+        <li>Switch between <strong>Table</strong> (per-satellite list with constellation, SNR, and used-in-fix flag) and <strong>Sky Plot</strong> (polar plot with azimuth/elevation rings) via the toggle, or set the default in Settings → GPS View.</li>
+        <li>The Sky Plot has an optional <strong>Show Labels</strong> toggle.</li>
+    </ul>
+
+    <h2>Settings</h2>
+    <figure>
+        <img src="screenshots/solunar-trail/settings.png" alt="Settings tab showing Appearance, Compass, Units, and Text Size controls">
+        <figcaption>Settings tab — appearance, units, tracking, GPS, and more.</figcaption>
+    </figure>
+    <ul>
+        <li><strong>Appearance:</strong> Theme (System / Light / Dark) and Text Size adjustment.</li>
+        <li><strong>Compass:</strong> True North or Magnetic North.</li>
+        <li><strong>Units:</strong> Imperial or Metric.</li>
+        <li><strong>Tracking:</strong> Mode (General / Ski) and, in Ski mode, the Lift Detection Range.</li>
+        <li><strong>GPS:</strong>
+            <ul>
+                <li><strong>Min Distance Filter</strong> — minimum movement to trigger a GPS update during tracking.</li>
+                <li><strong>Smart Filter</strong> — Off or Smart (starts at 0 m and ramps up to the configured value once tracking stabilizes).</li>
+                <li><strong>Stationary Update Interval</strong> — how often to request location when you're not moving (2 s / 4 s / 8 s / 16 s / Off).</li>
+                <li><strong>Auto-save Interval</strong> — periodically save tracking data to protect against process death (5 / 10 / 15 / 30 min / Off).</li>
+                <li><strong>Max Replay Duration</strong> — hides replay speeds that would exceed this duration.</li>
+            </ul>
+        </li>
+        <li><strong>OEM Battery Settings:</strong> When enabled, the battery-optimization step also tries the manufacturer-specific battery page (e.g. OxygenOS) for whitelisting.</li>
+        <li><strong>GPS View:</strong> Default for GPS Status — Table or Sky Plot.</li>
+        <li><strong>⭐ Rate This App</strong> and <strong>Reset to Defaults</strong> are at the bottom.</li>
+    </ul>
+
+    <h2>About</h2>
+    <p>App version, disclaimer, credits, attribution, and quick links to the User Manual and Privacy Policy.</p>
+    <figure>
+        <img src="screenshots/solunar-trail/about.png" alt="About tab showing app name, version, and disclaimer">
+        <figcaption>About tab — version info and project credits.</figcaption>
+    </figure>
 
     <h2>Maps and GPX Export</h2>
     <p>Map views use Google Maps to display locations and tracks. Saved tracks can be exported as GPX files for use in other mapping or GPS tools.</p>
-
-    <h2>Settings</h2>
-    <p>Settings include preferences such as distance units, theme, map type, GPS display mode, north reference, and tracking mode.</p>
 
     <h2>Privacy and Data</h2>
     <p>Solunar Trail stores saved locations, preferences, and recorded tracks locally on your device. It does not include analytics, advertising, or crash reporting SDKs. See the <a href="privacy-policy.html">Solunar Trail Privacy Policy</a> for details.</p>
@@ -112,6 +208,7 @@
         <li><strong>Tracking looks stationary:</strong> your device may not have received a new GPS point yet; move a short distance and wait for the next fix.</li>
         <li><strong>Compass seems wrong:</strong> move away from metal objects/electronics and recalibrate the device sensors.</li>
         <li><strong>Map does not load:</strong> check network connectivity. Google Maps tiles require network access.</li>
+        <li><strong>Tracking stops in the background:</strong> enable the <em>OEM Battery Settings</em> step in Settings and whitelist Solunar Trail in your phone's battery optimization page.</li>
     </ul>
 
     <h2>Contact</h2>
