@@ -1,0 +1,35 @@
+name: Jekyll build check
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      - name: Build site
+        run: |
+          if [ -f Gemfile ]; then
+            bundle exec jekyll build --verbose --strict_front_matter
+          else
+            gem install jekyll
+            jekyll build --verbose --strict_front_matter
+          fi
+      - name: Verify expected URLs exist
+        run: |
+          set -e
+          for f in _site/index.html \
+                   _site/privacy-policy.html \
+                   _site/privacy-handyyi.html \
+                   _site/solunar-trail-manual.html; do
+            test -f "$f" || { echo "MISSING: $f"; exit 1; }
+            echo "OK: $f"
+          done
