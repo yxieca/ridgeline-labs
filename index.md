@@ -17,3 +17,5 @@ Small, focused Android apps.
 **Solunar Trail** — [User Manual](/ridgeline-labs/solunar-trail-manual.html) · [Privacy Policy](/ridgeline-labs/privacy-policy.html)
 
 **HandyYi** — [Privacy Policy](/ridgeline-labs/privacy-handyyi.html)
+
+**Airgap Audio** — [Privacy Policy](/ridgeline-labs/privacy-airgap.html)
