@@ -27,6 +27,11 @@ The tabs, in order, are: **Library · Playing · Playlists · Settings · About*
 
 Every audio track Airgap Audio found on your device, ready to play.
 
+<figure>
+  <img src="screenshots/airgap/library.png" alt="Library tab listing songs with album-colored thumbnails, a search box, and folder/sort controls">
+  <figcaption>Library tab — every track on your device, with search, folder filter, and sort.</figcaption>
+</figure>
+
 - **Tap a song** to start playing it and jump to the **Playing** tab.
 - **Play all** starts the whole list from the top.
 - **Search** by title, artist, or album with the search field; **Clear search** resets it.
@@ -37,6 +42,11 @@ Every audio track Airgap Audio found on your device, ready to play.
 ## Playing
 
 The full-screen player for whatever is currently playing.
+
+<figure>
+  <img src="screenshots/airgap/playing.png" alt="Playing tab showing large album art, track title and artist, a scrubbable progress bar, and playback controls">
+  <figcaption>Playing tab — album art, scrubber, and transport controls, with the mini-player below.</figcaption>
+</figure>
 
 - Album art, title, artist, and a scrubbable progress bar.
 - **Play / Pause**, **Previous**, and **Next** controls.
@@ -50,6 +60,11 @@ A **mini-player** also appears above the tab bar while something is loaded, so y
 ## Playlists
 
 Your offline mixes, built entirely from the songs on your device.
+
+<figure>
+  <img src="screenshots/airgap/playlists.png" alt="A playlist's detail view with shuffle, repeat, and play controls, a loudness-leveled row, and tracks with delete and drag-reorder handles">
+  <figcaption>Playlist detail — shuffle / repeat / play, the loudness row, and drag-to-reorder tracks.</figcaption>
+</figure>
 
 - Tap **New playlist** to create one, then add songs from your Library (via a song's **⋮ options** or **Select songs**).
 - Tap a playlist to open it and see its tracks.
@@ -77,6 +92,11 @@ Each playlist remembers how it should behave when it reaches the end:
 
 All preferences are stored locally on your device.
 
+<figure>
+  <img src="screenshots/airgap/settings.png" alt="Settings tab showing Skip amount chips, Remember playback position and Resume on open toggles, and Volume normalization modes">
+  <figcaption>Settings tab — playback, volume normalization, and appearance.</figcaption>
+</figure>
+
 ### Playback
 
 - **Skip amount** — how far the back / forward buttons jump within a track.
@@ -102,6 +122,11 @@ Under **Learned values** you can expand any playlist to see each track's measure
 ## About
 
 App name and version, the 100%-offline guarantee, and quick links to the **User Manual**, **Privacy Policy**, and **Rate this app** on Google Play. Opening any of those links hands the address to your browser or the Play Store app — the app itself still makes no network connections.
+
+<figure>
+  <img src="screenshots/airgap/about.png" alt="About tab showing app name and version, a 100% offline card, and User Manual, Privacy Policy, and Rate this app links">
+  <figcaption>About tab — version, the offline guarantee, and the User Manual / Privacy Policy / Rate links.</figcaption>
+</figure>
 
 ## Privacy and Data
 
