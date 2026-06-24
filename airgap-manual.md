@@ -19,7 +19,7 @@ footer: |
 2. Airgap Audio scans your device's media storage and lists everything it finds in the **Library**.
 3. Use the **bottom tab bar**, or **swipe left/right** on the page, to move between sections.
 
-The tabs, in order, are: **Library · Playing · Playlists · Settings · About**.
+The tabs, in order, are: **Library · Playlists · Playing · Settings · About**.
 
 > Airgap Audio plays the music that is already on your device. It works fully offline and never sends your library anywhere.
 
@@ -38,24 +38,6 @@ Every audio track Airgap Audio found on your device, ready to play.
 - **Filter by folder** to narrow the list to a single folder (**All folders** shows everything).
 - Tap a song's **⋮ options** to **Add to playlist** (or add it to a brand-new playlist on the spot).
 - **Select songs** lets you multi-select several tracks at once and batch-add them all to a playlist.
-
-## Playing
-
-The full-screen player for whatever is currently playing.
-
-<figure>
-  <img src="screenshots/airgap/playing.png" alt="Playing tab showing large album art, track title and artist, a scrubbable progress bar, and playback controls">
-  <figcaption>Playing tab — album art, scrubber, and transport controls, with the mini-player below.</figcaption>
-</figure>
-
-- Album art, title, artist, and a scrubbable progress bar.
-- **Play / Pause**, **Previous**, and **Next** controls.
-- The **back / forward** buttons skip within the current track by the **Skip amount** you set in Settings.
-- Drag the progress bar to scrub to any point in the track.
-- Playback continues in the background with a notification, and responds to headset/Bluetooth controls.
-- When nothing is queued yet, this tab invites you to pick a song from your Library.
-
-A **mini-player** also appears above the tab bar while something is loaded, so you can pause/resume and reopen the full Playing view from anywhere in the app.
 
 ## Playlists
 
@@ -87,6 +69,24 @@ Each playlist remembers how it should behave when it reaches the end:
 - **Repeat all** — start the playlist over from the beginning.
 - **Repeat one** — keep repeating the current track.
 - With both off, playback stops at the end of the playlist.
+
+## Playing
+
+The full-screen player for whatever is currently playing.
+
+<figure>
+  <img src="screenshots/airgap/playing.png" alt="Playing tab showing large album art, track title and artist, a scrubbable progress bar, and playback controls">
+  <figcaption>Playing tab — album art, scrubber, and transport controls, with the mini-player below.</figcaption>
+</figure>
+
+- Album art, title, artist, and a scrubbable progress bar.
+- **Play / Pause**, **Previous**, and **Next** controls.
+- The **back / forward** buttons skip within the current track by the **Skip amount** you set in Settings.
+- Drag the progress bar to scrub to any point in the track.
+- Playback continues in the background with a notification, and responds to headset/Bluetooth controls.
+- When nothing is queued yet, this tab invites you to pick a song from your Library.
+
+A **mini-player** also appears above the tab bar while something is loaded, so you can pause/resume and reopen the full Playing view from anywhere in the app.
 
 ## Settings
 
