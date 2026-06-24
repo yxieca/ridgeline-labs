@@ -18,4 +18,4 @@ Small, focused Android apps.
 
 **HandyYi** — [Privacy Policy](/ridgeline-labs/privacy-handyyi.html)
 
-**Airgap Audio** — [Privacy Policy](/ridgeline-labs/privacy-airgap.html)
+**Airgap Audio** — [User Manual](/ridgeline-labs/airgap-manual.html) · [Privacy Policy](/ridgeline-labs/privacy-airgap.html)
