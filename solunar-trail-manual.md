@@ -180,3 +180,13 @@ Solunar Trail stores saved locations, preferences, and recorded tracks locally o
 For questions or support, contact:
 
 **yxieca@gmail.com**
+
+## Get Solunar Trail
+
+Solunar Trail is available on the [Google Play Store](https://play.google.com/store/apps/details?id=com.ridgelinelabs.solunartrail).
+
+<p>
+  <a href="https://play.google.com/store/apps/details?id=com.ridgelinelabs.solunartrail">
+    <img src="assets/google-play-badge.png" alt="Get it on Google Play" height="60">
+  </a>
+</p>
